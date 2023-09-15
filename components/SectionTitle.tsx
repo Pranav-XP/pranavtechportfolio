@@ -1,4 +1,5 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 
 interface Props{
     title:string
@@ -6,9 +7,13 @@ interface Props{
 
 const SectionTitle = ({title}: Props) => {
   return (
-    <h2 className='font-titleFont text-3xl font-bold flex items-center'>
+    <motion.h2
+    initial={{y:10,opacity:0}}
+    animate={{y:0,opacity:1}}
+      transition={{duration:0.5,delay:0.9}}
+     className='font-titleFont text-3xl font-bold flex items-center'>
         {title}
-    </h2>
+    </motion.h2>
   )
 }
 

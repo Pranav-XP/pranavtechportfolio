@@ -9,7 +9,7 @@ import{CgWebsite} from "react-icons/cg"
 const Tools = () => {
   return (
     <section id="Tools"><SectionTitle title="Tools"></SectionTitle>
-    <div className='flex flex-col lgl:flex-row gap-16'>
+    <div className='flex flex-col lgl:flex-row gap-16 py-5'>
         <div className='w-full lgl:w-2/3 text-base text-textLight font-medium flex flex-col gap-4'>
           Technologies I have experience with:
           <ul className='max-w-[450px] grid grid-cols-3 justify-between gap-4'>

@@ -18,3 +18,8 @@
         opacity: 1;
     }
 }
+
+::selection {
+    background: #fff;
+    color: #111111;
+  }

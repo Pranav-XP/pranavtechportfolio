@@ -10,25 +10,25 @@ const LeftSide = () => {
         <div className='flex flex-col gap-4'>
             <a className='w-10 h-10 text-xl bg-hoverColor
             rounded-full inline-flex items-center justify-center cursor-pointer
-            hover:translate-x-2 transition-all duration-300'
+            hover:translate-x-2 transition-all hover:drop-shadow-glow duration-300'
             href="https://github.com/Pranav-XP" target="_blank">
                 <motion.span
                  initial={{x:-50,opacity:0}}
                  animate={{x:0,opacity:1}}
                  transition={{duration:0.1}}>
-                    <VscGithubInverted className="w-9 h-9"></VscGithubInverted>
+                    <VscGithubInverted size={35}></VscGithubInverted>
                 </motion.span>
             </a>
 
             <a className='w-10 h-10 text-xl bg-hoverColor
             rounded-full inline-flex items-center justify-center cursor-pointer
-            hover:translate-x-2 transition-all duration-300'
+            hover:translate-x-2 transition-all duration-300 hover:drop-shadow-glow'
             href="https://www.linkedin.com/in/pranav-chand-16777318b/" target="_blank">
                 <motion.span 
                 initial={{x:-50,opacity:0}}
                 animate={{x:0,opacity:1}}
                 transition={{duration:0.2}}>
-                    <AiFillLinkedin className="w-9 h-9"></AiFillLinkedin>
+                    <AiFillLinkedin size={35}></AiFillLinkedin>
                 </motion.span>
             </a>
         </div>

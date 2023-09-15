@@ -46,8 +46,14 @@ const config: Config = {
 
       },
       boxShadow:{
-        navbarShadow:"0 10px 30px -13px rgba(75, 75, 75, 0.9)"
-      }
+        navbarShadow:"0 10px 30px -10px rgba(75, 75, 75, 0.9)"
+      },
+      dropShadow: {
+        glow: [
+          "0 0px 20px rgba(255,255, 255, 0.35)",
+          "0 0px 65px rgba(255, 255,255, 0.2)"
+        ]
+      },
     },
   },
   plugins: [],
