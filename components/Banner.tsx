@@ -48,7 +48,7 @@ const Banner = () => {
         className='w-52 h-14 text-m font-titleFont font-bold border border-textLight
         rounded-md text-textLight tracking-wide hover:bg-textLight 
         hover:text-bodyColor duration-300 mt-5'>
-            View Website Code
+            <a href='https://github.com/Pranav-XP/pranavtechportfolio'>View Website Code</a>
         </motion.button>
             </div>
         </div>
