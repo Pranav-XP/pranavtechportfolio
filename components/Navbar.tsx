@@ -7,9 +7,10 @@ import { motion } from "framer-motion"
 const Navbar = () => {
   return (
     <div className='w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-navbarColor px-4'>
-        <div className='max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between'>
+        <div className='bg-bodyColor max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between'>
             <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}}>
-                <a href="#"><Image className="w-16 hover:scale-110 duration-300" src={profileImg} alt="logo"/></a>
+                <a href="#"><Image className="w-12 hover:scale-110 duration-300" 
+                src={logo} alt="logo"/></a>
             </motion.div>
             <div className="hidden mdl:inline-flex items-center gap-7">
                 <ul className="flex gap-7">
@@ -22,13 +23,13 @@ const Navbar = () => {
                 transition={{duration:0.1}}>Home</motion.li>
                 </Link>
 
-                <Link href="#home"
+                <Link href="#tools"
                 className="flex items-center -gap-1 font-bold text-textLight
                 hover:-translate-y-1 cursor-pointer duration-300 nav-link">
                 <motion.li
                 initial={{y:-20,opacity:0}}
                 animate={{y:0,opacity:1}}
-                transition={{duration:0.3}}>About</motion.li>
+                transition={{duration:0.3,delay:0.1}}>Tools</motion.li>
                 </Link>
 
                 <Link href="#home"
@@ -37,19 +38,10 @@ const Navbar = () => {
                 <motion.li
                 initial={{y:-20,opacity:0}}
                 animate={{y:0,opacity:1}}
-                transition={{duration:0.5}}>Projects</motion.li>
-                </Link>
-
-                <Link href="#home"
-                className="flex items-center -gap-1 font-bold text-textLight
-                hover:-translate-y-1 cursor-pointer duration-300 nav-link">
-                <motion.li
-                initial={{y:-20,opacity:0}}
-                animate={{y:0,opacity:1}}
-                transition={{duration:0.5}}>Contact</motion.li>
+                transition={{duration:0.5,delay:0.4}}>Contact</motion.li>
                 </Link>   
                 </ul>
-                <a href="#">
+                {/* <a href="#">
                 <motion.button
                 initial={{opacity:0}}
                 animate={{opacity:1}}
@@ -58,7 +50,7 @@ const Navbar = () => {
                 hover:bg-textLight hover:text-bodyColor duration-300">
                     Resume
                 </motion.button>
-                </a>
+                </a> */}
             </div>
             {/*Small Icon*/}
             <div className="w-6 h-5 flex flex-col justify-between items-center mdl:hidden text-4xl 
