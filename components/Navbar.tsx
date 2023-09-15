@@ -9,13 +9,13 @@ const Navbar = () => {
     <div className='w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-navbarColor px-4'>
         <div className='max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between'>
             <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}}>
-                <Image className="w-16" src={profileImg} alt="logo"/>
+                <a href="#"><Image className="w-16 hover:scale-110 duration-300" src={profileImg} alt="logo"/></a>
             </motion.div>
             <div className="hidden mdl:inline-flex items-center gap-7">
                 <ul className="flex gap-7">
                 <Link href="#home"
                 className="flex items-center -gap-1 font-bold text-textLight
-                hover:text-textBlue cursor-pointer duration-300 nav-link">
+                hover:-translate-y-1 cursor-pointer duration-300 nav-link">
                 <motion.li
                 initial={{y:-20,opacity:0}}
                 animate={{y:0,opacity:1}}
@@ -24,7 +24,7 @@ const Navbar = () => {
 
                 <Link href="#home"
                 className="flex items-center -gap-1 font-bold text-textLight
-                hover:text-textBlue cursor-pointer duration-300 nav-link">
+                hover:-translate-y-1 cursor-pointer duration-300 nav-link">
                 <motion.li
                 initial={{y:-20,opacity:0}}
                 animate={{y:0,opacity:1}}
@@ -33,7 +33,7 @@ const Navbar = () => {
 
                 <Link href="#home"
                 className="flex items-center -gap-1 font-bold text-textLight
-                hover:text-textBlue cursor-pointer duration-300 nav-link">
+                hover:-translate-y-1 cursor-pointer duration-300 nav-link">
                 <motion.li
                 initial={{y:-20,opacity:0}}
                 animate={{y:0,opacity:1}}
@@ -42,7 +42,7 @@ const Navbar = () => {
 
                 <Link href="#home"
                 className="flex items-center -gap-1 font-bold text-textLight
-                hover:text-textBlue cursor-pointer duration-300 nav-link">
+                hover:-translate-y-1 cursor-pointer duration-300 nav-link">
                 <motion.li
                 initial={{y:-20,opacity:0}}
                 animate={{y:0,opacity:1}}

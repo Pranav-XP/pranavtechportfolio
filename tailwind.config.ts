@@ -13,6 +13,14 @@ const config: Config = {
         contentContainer:"1140px",
         containerSmall:"1024px",
         containerxs:"768px",
+      },fontSize: {
+        sm: '0.8rem',
+        base: '1rem',
+        xl: '1.25rem',
+        '2xl': '1.563rem',
+        '3xl': '1.953rem',
+        '4xl': '2.441rem',
+        '5xl': '3.052rem',
       },
       screens:{
         xs:"320px",
