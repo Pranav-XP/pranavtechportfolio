@@ -11,7 +11,7 @@ export default function Home() {
     overflow-x-hidden overflow-y-scroll scrollbar scrollbar-thumb- scrollbar-track-neutral-900">
       <Navbar/>
       <div className="flex items-center justify-between gap-4">
-      <aside className="hidden sm:flex fixed h-full w-16 left-0 bottom-0">
+      <aside className="hidden md:flex fixed h-full w-16 left-0 bottom-0">
         <LeftSide></LeftSide>
       </aside>
       <div className="flex flex-col items-center mx-auto gap-20">
