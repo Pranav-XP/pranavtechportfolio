@@ -22,22 +22,12 @@ const config: Config = {
         '4xl': '2.441rem',
         '5xl': '3.052rem',
       },
-      screens:{
-        xs:"320px",
-        sm:"375px",
-        sml:"500px",
-        md:"667px",
-        mdl:"768px",
-        lg:"960px",
-        lgl:"1024px",
-        xl:"1280px",
-      },
       fontFamily:{
         bodyFont:["Roboto Mono", "monospace"],
         titleFont:["Inter","sans-serif"]
       },
       colors:{
-        navbarColor:"##101010",
+        navbarColor:"#101010",
         bodyColor:"#111111",
         textLight:"#ffffff",
         textDark:"#9c9c9c",
@@ -46,6 +36,7 @@ const config: Config = {
 
       },
       boxShadow:{
+        footerShadow:"0 -10px 20px -10px rgba(75, 75, 75, 0.9)",
         navbarShadow:"0 10px 30px -10px rgba(75, 75, 75, 0.9)"
       },
       dropShadow: {
@@ -56,6 +47,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
 export default config

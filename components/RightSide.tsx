@@ -1,6 +1,5 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-import{HiOutlineMail} from 'react-icons/hi'
 import{MdEmail} from 'react-icons/md'
 
 const RightSide = () => {

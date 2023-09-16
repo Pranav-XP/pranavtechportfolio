@@ -6,13 +6,13 @@ import { motion } from "framer-motion"
 
 const Navbar = () => {
   return (
-    <div className='bg-navbarColor w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50  px-4 border-b-2 border-textLight/20'>
-        <div className='bg-bodyColor max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between'>
+    <div className='bg-navbarColor w-full shadow-navbarShadow h-20 sticky top-0 z-50  px-4'>
+        <div className=' max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between'>
             <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}}>
-                <a href="#"><Image className="w-12 hover:scale-110 duration-300" 
+                <a href="#home"><Image className="w-12 hover:scale-110 duration-300" 
                 src={logo} alt="logo"/></a>
             </motion.div>
-            <div className="hidden mdl:inline-flex items-center gap-7">
+            <div className="hidden lg:flex lg:items-center lg:gap-7">
                 <ul className="flex gap-7">
                 <Link href="#home"
                 className="flex items-center -gap-1 font-bold text-textLight
@@ -53,7 +53,7 @@ const Navbar = () => {
                 </a> */}
             </div>
             {/*Small Icon*/}
-            <div className="w-6 h-5 flex flex-col justify-between items-center mdl:hidden text-4xl 
+            <div className="w-6 h-5 flex flex-col justify-between items-center lg:hidden text-4xl 
             text-textLight cursor-pointer overflow-hidden group">
                 <span className="w-full h-[2px] bg-textLight inline-flex transform 
                 group-hover:translate-x-3 transition-all ease-in-out duration-300"></span>
