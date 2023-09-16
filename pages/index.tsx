@@ -23,7 +23,7 @@ export default function Home() {
         <RightSide></RightSide>
       </aside>
       </div>
-      <div className="md:hidden w-full h-10 bottom-0 flex">
+      <div className="sm:hidden w-full h-10 bottom-0 flex">
         <Footer></Footer>
         </div>
       </main>
