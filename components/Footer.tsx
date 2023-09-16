@@ -6,7 +6,7 @@ import {AiFillLinkedin} from "react-icons/ai"
 
 const Footer = () => {
   return (
-    <footer className='shadow-footerShadow w-full h-5 py-6 flex items-center justify-center gap-3'>
+    <footer className='shadow-footerShadow w-full h-5 py-7 flex items-center justify-center gap-3'>
         <a href='https://github.com/Pranav-XP'>
             <span>
                 <VscGithubInverted size={20}></VscGithubInverted>
