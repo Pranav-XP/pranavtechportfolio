@@ -53,7 +53,7 @@ const Navbar = () => {
                 </a> */}
             </div>
             {/*Small Icon*/}
-            <div className="w-6 h-5 flex flex-col justify-between items-center lg:hidden text-4xl 
+            <div className="hidden w-6 h-5  flex-col justify-between items-center lg:hidden text-4xl 
             text-textLight cursor-pointer overflow-hidden group">
                 <span className="w-full h-[2px] bg-textLight inline-flex transform 
                 group-hover:translate-x-3 transition-all ease-in-out duration-300"></span>
