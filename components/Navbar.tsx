@@ -38,7 +38,7 @@ const Navbar = () => {
                 <motion.li
                 initial={{y:-20,opacity:0}}
                 animate={{y:0,opacity:1}}
-                transition={{duration:0.5,delay:0.4}}>Contact</motion.li>
+                transition={{duration:0.5,delay:0.4}}>Projects Coming Soon</motion.li>
                 </Link>   
                 </ul>
                 {/* <a href="#">

@@ -4,6 +4,7 @@ import {BiLogoJava,BiLogoSpringBoot,BiGitBranch} from "react-icons/bi"
 import {TbBrandCpp,TbBrandNextjs} from "react-icons/tb"
 import {SiMysql,SiVmware,SiTailwindcss} from "react-icons/si"
 import{CgWebsite} from "react-icons/cg"
+import {motion} from 'framer-motion'
 
 
 const Tools = () => {
@@ -12,7 +13,11 @@ const Tools = () => {
     className='px-10'>
       <SectionTitle title="Tools"></SectionTitle>
     <div className='flex flex-col gap-16 py-5'>
-        <div className='w-full text-textLight font-medium flex flex-col gap-4'>
+        <motion.div 
+        initial={{opacity:0}} 
+        animate={{opacity:1}} 
+        transition={{duration:1,delay:1}}
+        className='w-full text-textLight font-medium flex flex-col gap-4'>
           Technologies I have experience with:
           <ul className='max-w-[450px] grid grid-cols-3 justify-between gap-4'>
             <li><span><BiLogoJava size={60}></BiLogoJava></span></li>
@@ -25,7 +30,7 @@ const Tools = () => {
             <li><span><SiVmware size={60}></SiVmware></span></li>
             <li><span><SiTailwindcss size={40}></SiTailwindcss></span>TailwindCSS</li>
           </ul>
-        </div>
+        </motion.div>
     </div>
     </section>
   )
